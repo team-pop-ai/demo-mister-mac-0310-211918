@@ -1,0 +1,20 @@
+{
+  "email_issues": [
+    "My email stopped working after the update",
+    "I can't see any new messages in my Mail app", 
+    "It says 'Cannot Get Mail' with a red exclamation mark",
+    "The emails aren't syncing from my computer"
+  ],
+  "spam_concerns": [
+    "I got this weird email asking for my password",
+    "Someone is trying to trick me, this looks suspicious",
+    "This email says I won money but I didn't enter any contest",
+    "How can I tell if an email is fake?"
+  ],
+  "icloud_sync": [
+    "My photos aren't showing up on my iPad",
+    "The contacts are different on my phone and computer",
+    "iCloud says it's full but I just bought more storage",
+    "Some of my apps aren't downloading to my new phone"
+  ]
+}

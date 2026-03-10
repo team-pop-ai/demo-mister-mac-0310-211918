@@ -1,0 +1,32 @@
+{
+  "customer_1": {
+    "id": "customer_1",
+    "name": "Sarah Johnson",
+    "email": "sarah.johnson@email.com",
+    "phone": "(555) 123-4567",
+    "device": "iPhone 14",
+    "last_visit": "2023-12-15",
+    "total_visits": 3,
+    "notes": "Regular customer, usually needs help with email setup after iOS updates"
+  },
+  "customer_2": {
+    "id": "customer_2", 
+    "name": "Mike Chen",
+    "email": "mike.chen@business.com",
+    "phone": "(555) 234-5678",
+    "device": "iPhone 14 Pro",
+    "last_visit": "2024-01-20",
+    "total_visits": 7,
+    "notes": "Business user, concerned about security and spam emails"
+  },
+  "customer_3": {
+    "id": "customer_3",
+    "name": "Linda Rodriguez", 
+    "email": "linda.r@email.com",
+    "phone": "(555) 345-6789",
+    "device": "iPhone 12",
+    "last_visit": "2024-02-10",
+    "total_visits": 4,
+    "notes": "Often has iCloud sync issues with contacts and photos"
+  }
+}

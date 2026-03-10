@@ -1,0 +1,32 @@
+{
+  "customer_1": {
+    "appointment_id": "apt_001",
+    "customer_id": "customer_1",
+    "type": "iPhone Email Setup",
+    "scheduled_time": "2024-01-25T14:30:00",
+    "duration_minutes": 30,
+    "technician_assigned": "Junior Tech - Alex",
+    "issue_description": "Customer reports email stopped working after iOS update",
+    "priority": "standard"
+  },
+  "customer_2": {
+    "appointment_id": "apt_002", 
+    "customer_id": "customer_2",
+    "type": "Security Concern",
+    "scheduled_time": "2024-01-25T15:00:00", 
+    "duration_minutes": 20,
+    "technician_assigned": "Junior Tech - Jordan",
+    "issue_description": "Customer received suspicious emails, wants help identifying scams",
+    "priority": "high"
+  },
+  "customer_3": {
+    "appointment_id": "apt_003",
+    "customer_id": "customer_3", 
+    "type": "iCloud Sync Issues",
+    "scheduled_time": "2024-01-25T15:30:00",
+    "duration_minutes": 30,
+    "technician_assigned": "Junior Tech - Sam",
+    "issue_description": "Photos and contacts not syncing between iPhone and iPad",
+    "priority": "standard"
+  }
+}

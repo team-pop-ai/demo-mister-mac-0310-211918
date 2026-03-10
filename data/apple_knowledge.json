@@ -1,0 +1,44 @@
+{
+  "email_troubleshooting": {
+    "gmail_auth_expired": {
+      "problem": "Gmail account authentication expired after iOS update",
+      "steps": [
+        "Go to Settings > Mail > Accounts",
+        "Look for Gmail account with warning triangle",
+        "Tap on the Gmail account",
+        "Select 'Re-enter Password'", 
+        "Enter current Gmail password",
+        "Wait for 'Account Verified' confirmation",
+        "Return to Mail app and pull down to refresh"
+      ],
+      "success_indicators": ["Account verified message", "New emails appearing", "Warning triangle disappears"]
+    },
+    "exchange_server_error": {
+      "problem": "Corporate email server connection issues",
+      "steps": [
+        "Verify with customer their work email server is running",
+        "Check Settings > Mail > Accounts > [Work Account]",
+        "Try toggling Mail sync off and on",
+        "If still failing, delete and re-add the account",
+        "Contact IT department if server settings needed"
+      ]
+    }
+  },
+  "spam_identification": {
+    "common_scam_signs": [
+      "Urgent language ('Act now!', 'Limited time!')",
+      "Requests for passwords or personal information", 
+      "Suspicious sender addresses not matching claimed company",
+      "Generic greetings ('Dear Customer' instead of actual name)",
+      "Poor spelling and grammar",
+      "Unexpected prize or money offers"
+    ],
+    "how_to_handle": [
+      "Never click links in suspicious emails",
+      "Don't reply or provide any information",
+      "Mark as junk in Mail app",
+      "Block the sender if option available",
+      "Forward phishing attempts to reportphishing@appsupport.apple.com"
+    ]
+  }
+}

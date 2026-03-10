@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Mac AI Copilot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="app-header">
+        <div style="font-size: 18px; font-weight: 700;">🍎 Mister Mac AI Copilot</div>
+        <div style="margin-left: auto; font-size: 14px; font-weight: 400; color: #4a4845;">
+            Live Technician Assistant
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Customer Selection -->
+        <div id="customer-selection" class="card" style="margin-bottom: 24px;">
+            <div class="section-label">Active Customer Call</div>
+            <div style="display: flex; gap: 16px; align-items: end; margin-bottom: 16px;">
+                <div style="flex: 1;">
+                    <div class="field-label">Select Customer</div>
+                    <select id="customer-select">
+                        <option value="">Choose active call...</option>
+                        <option value="customer_1">Sarah Johnson - iPhone Email Issues</option>
+                        <option value="customer_2">Mike Chen - Suspicious Email Concerns</option>
+                        <option value="customer_3">Linda Rodriguez - iCloud Sync Problems</option>
+                    </select>
+                </div>
+                <button id="start-session" class="btn-primary" disabled>Start AI Copilot</button>
+            </div>
+            <div class="alert alert-info" style="margin-top: 16px;">
+                🎯 <strong>Demo Mode:</strong> This simulates real FaceTime SharePlay screen sharing and live conversation analysis. In production, this would connect to actual customer calls.
+            </div>
+        </div>
+
+        <!-- Main Dashboard (hidden initially) -->
+        <div id="dashboard" style="display: none;">
+            <!-- Customer Context Row -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 24px; margin-bottom: 24px;">
+                <!-- Customer Screen Share -->
+                <div class="card">
+                    <div class="section-label">Customer Screen (FaceTime SharePlay)</div>
+                    <div id="screen-viewer" class="screen-viewer">
+                        <div class="empty-state">Waiting for customer to share screen...</div>
+                    </div>
+                    <div id="screen-analysis" class="analysis-overlay" style="display: none;"></div>
+                </div>
+
+                <!-- Customer Info -->
+                <div>
+                    <div class="card" style="margin-bottom: 16px;">
+                        <div class="section-label">Customer Context</div>
+                        <div id="customer-info">
+                            <div style="margin-bottom: 8px;">
+                                <strong id="customer-name">-</strong>
+                                <div class="badge badge-blue" id="appointment-type">-</div>
+                            </div>
+                            <div style="font-size: 13px; color: #b0aea5; margin-bottom: 12px;" id="appointment-time">-</div>
+                            <div style="font-size: 14px;" id="customer-history">-</div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="section-label">Session Status</div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <div class="badge badge-green" id="session-status">Initializing</div>
+                            <div style="font-size: 12px; color: #b0aea5;" id="session-timer">00:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Analysis Row -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                <!-- Live Conversation -->
+                <div class="card">
+                    <div class="section-label">Live Conversation Analysis</div>
+                    <div id="conversation-feed" class="conversation-feed">
+                        <div class="empty-state">Listening for customer conversation...</div>
+                    </div>
+                </div>
+
+                <!-- AI Guidance Panel -->
+                <div class="card">
+                    <div class="section-label">AI Guidance for Technician</div>
+                    <div id="guidance-panel" class="guidance-panel">
+                        <div class="empty-state">AI analysis will appear here...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Knowledge Base Quick Reference -->
+            <div class="card" style="margin-top: 24px;">
+                <div class="section-label">Apple Knowledge Base - Quick Reference</div>
+                <div id="knowledge-suggestions" class="knowledge-grid">
+                    <div class="knowledge-card">
+                        <h4>iPhone Email Setup</h4>
+                        <p>Gmail, Yahoo, Outlook configuration steps</p>
+                    </div>
+                    <div class="knowledge-card">
+                        <h4>Spam & Scam Identification</h4>
+                        <p>How to identify and handle suspicious emails</p>
+                    </div>
+                    <div class="knowledge-card">
+                        <h4>iCloud Sync Issues</h4>
+                        <p>Contacts, calendar, photos sync troubleshooting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
